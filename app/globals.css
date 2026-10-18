@@ -179,6 +179,10 @@ body {
 }
 
 .enter-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   margin-top: 28px;
   padding: 15px 22px;
   background: var(--maroon);
@@ -186,16 +190,13 @@ body {
   text-decoration: none;
   font: 9px Arial, sans-serif;
   letter-spacing: 2px;
+  white-space: nowrap;
   transition: background 0.25s, transform 0.25s;
 }
 
 .enter-button:hover {
   background: #813d4c;
   transform: translateY(-2px);
-}
-
-.enter-button .arrow-icon {
-  margin-left: 14px;
 }
 
 .arrow-icon {
@@ -1297,6 +1298,9 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
 }
 
 .timeline-marker {
+  position: absolute;
+  top: 50%;
+  left: -78px;
   z-index: 1;
   display: grid;
   place-items: center;
@@ -1308,9 +1312,11 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
   color: var(--maroon);
   font-family: Georgia, serif;
   font-size: 17px;
+  transform: translateY(-50%);
 }
 
 .timeline-content {
+  grid-column: 2;
   padding-top: 5px;
 }
 
@@ -1319,6 +1325,13 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
   color: #9a7544;
   font: 9px/1.6 Arial, sans-serif;
   letter-spacing: 1.4px;
+}
+
+.timeline-title-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 54px;
 }
 
 .timeline-content h3 {
@@ -1359,6 +1372,7 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
 }
 
 .timeline-flower {
+  grid-column: 3;
   padding-top: 12px;
   color: #a17a43;
   font-size: 22px;
@@ -1432,9 +1446,14 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
   }
 
   .timeline-marker {
+    left: -54px;
     width: 41px;
     height: 41px;
     font-size: 14px;
+  }
+
+  .timeline-title-row {
+    min-height: 41px;
   }
 
   .timeline-date {

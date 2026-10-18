@@ -481,10 +481,14 @@ export default function Home() {
             }`}
             data-reveal="timeline"
           >
-            <div className="timeline-marker">{String(index + 1).padStart(2, "0")}</div>
             <div className="timeline-content">
               <p className="timeline-date">{event.date} · {event.time}</p>
-              <h3>{event.name}</h3>
+              <div className="timeline-title-row">
+                <div className="timeline-marker">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <h3>{event.name}</h3>
+              </div>
               <p className="timeline-venue">{event.venue}</p>
               {event.mapUrl && (
                 <a
