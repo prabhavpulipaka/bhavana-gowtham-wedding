@@ -57,7 +57,7 @@ body {
 .hero-art {
   position: relative;
   width: min(290px, 70vw);
-  aspect-ratio: 8 / 5;
+  height: auto;
   margin: 34px 0 10px;
   display: grid;
   place-items: center;
@@ -322,7 +322,7 @@ body {
   }
 
   .hero-art {
-    width: min(360px, 88vw);
+    width: min(360px, 100%);
     height: auto;
     aspect-ratio: auto;
     margin-top: 25px;
@@ -336,7 +336,7 @@ body {
   .hero-painting img {
     height: auto;
     object-fit: contain;
-    transform: translateX(clamp(6px, 2vw, 10px));
+    transform: translateX(clamp(3px, 1vw, 5px));
   }
 
   .hero h1 {
@@ -762,8 +762,8 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
 }
 .hero-painting {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -772,11 +772,10 @@ html.reveal-ready .event-row[data-reveal][data-revealed="true"]:hover {
 .hero-painting img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  transform: scale(1.16);
-  transform-origin: center top;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
 }
 
 .event-art {
