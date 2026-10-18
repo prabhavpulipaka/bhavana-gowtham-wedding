@@ -336,7 +336,7 @@ body {
   .hero-painting img {
     height: auto;
     object-fit: contain;
-    transform: none;
+    transform: translateX(clamp(6px, 2vw, 10px));
   }
 
   .hero h1 {
