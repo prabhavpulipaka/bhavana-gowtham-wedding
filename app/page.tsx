@@ -3,6 +3,30 @@
 
 import { useEffect, useState } from "react";
 
+function ArrowIcon({ direction }: { direction: "down" | "down-right" | "up-right" }) {
+  const paths = {
+    down: "M12 4v16m-7-7 7 7 7-7",
+    "down-right": "M5 5l14 14m-9 0h9v-9",
+    "up-right": "M5 19 19 5m-9 0h9v9",
+  };
+
+  return (
+    <svg
+      aria-hidden="true"
+      className="arrow-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      focusable="false"
+    >
+      <path d={paths[direction]} />
+    </svg>
+  );
+}
+
 const events = [
   {
     number: "I",
@@ -11,7 +35,7 @@ const events = [
     time: "11:00 AM onwards",
     venue: "Golden Serene Farm House, Hyderabad",
     art: "carnival",
-    symbol: "✺",
+    symbol: "✺\uFE0E",
     image: "/artwork/carnival.webp",
     calendarStart: "20261112T053000Z",
     calendarEnd: "20261112T113000Z",
@@ -25,7 +49,7 @@ const events = [
     time: "7:00 PM onwards",
     venue: "Advaya Convention, ORR Exit 6, Muneerabad",
     art: "sangeeth",
-    symbol: "✳",
+    symbol: "✳\uFE0E",
     image: "/artwork/sangeeth.webp",
     calendarStart: "20261113T133000Z",
     calendarEnd: "20261113T173000Z",
@@ -39,7 +63,7 @@ const events = [
     time: "3:00 PM onwards",
     venue: "Groom's and bride's residences",
     art: "mehandi",
-    symbol: "❋",
+    symbol: "❋\uFE0E",
     image: "/artwork/mehandi.webp",
     calendarStart: "20261114T093000Z",
     calendarEnd: "20261114T123000Z",
@@ -53,7 +77,7 @@ const events = [
     time: "Muhurtham: 9:15 PM · Dinner: 7:30 PM",
     venue: "Jenvi Convention, ORR Exit 6, Thumukunta",
     art: "pelli",
-    symbol: "✺",
+    symbol: "✺\uFE0E",
     image: "/artwork/pelli.webp",
     calendarStart: "20261115T140000Z",
     calendarEnd: "20261115T180000Z",
@@ -305,7 +329,7 @@ export default function Home() {
         </div>
 
         <a className="enter-button" href="#celebration" data-reveal>
-          {copy.button} <span>↘</span>
+          {copy.button} <ArrowIcon direction="down-right" />
         </a>
 
         <div className="hero-footer">
@@ -326,7 +350,7 @@ export default function Home() {
           data-reveal
           onClick={() => downloadCalendar(events, "bhavana-gowtham-events.ics")}
         >
-          Add all events to calendar <span aria-hidden="true">↓</span>
+          Add all events to calendar <ArrowIcon direction="down" />
         </button>
 
         <div className="event-list">
@@ -357,7 +381,7 @@ export default function Home() {
                     downloadCalendar([event], `${event.name.toLowerCase()}-2026.ics`)
                   }
                 >
-                  Add to calendar <span aria-hidden="true">↓</span>
+                  Add to calendar <ArrowIcon direction="down" />
                 </button>
               </div>
 
@@ -406,7 +430,7 @@ export default function Home() {
           </div>
           {/* Editorial note */}
           <div className="story-note" data-reveal>
-            <span className="story-flower">❋</span>
+            <span className="story-flower">{"❋\uFE0E"}</span>
             <p>Some stories are written in the stars.</p>
             <span className="story-note-bottom">
               THEIRS IS JUST BEGINNING
@@ -469,7 +493,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Get directions <span aria-hidden="true">↗</span>
+                  Get directions <ArrowIcon direction="up-right" />
                 </a>
               )}
             </div>
@@ -485,7 +509,7 @@ export default function Home() {
     </section>
     <section className="invitation-closing" id="invitation-closing">
       <div className="closing-ornament" aria-hidden="true">
-        ❋ ───────── ✦ ───────── ❋
+        {"❋\uFE0E ───────── ✦\uFE0E ───────── ❋\uFE0E"}
       </div>
       <p className="closing-kicker" data-reveal>WITH LOVE & BLESSINGS</p>
       <h2 data-reveal>
@@ -537,7 +561,7 @@ export default function Home() {
         TWO FAMILIES · ONE BEAUTIFUL BEGINNING
       </p>
       <div className="closing-bottom-ornament" aria-hidden="true">
-        ❧
+        {"❧\uFE0E"}
       </div>
     </section>
       </main>

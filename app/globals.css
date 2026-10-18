@@ -194,8 +194,14 @@ body {
   transform: translateY(-2px);
 }
 
-.enter-button span {
+.enter-button .arrow-icon {
   margin-left: 14px;
+}
+
+.arrow-icon {
+  flex: none;
+  width: 15px;
+  height: 15px;
 }
 
 .hero-footer {
@@ -467,7 +473,7 @@ body {
 
 .event-art::before,
 .event-art::after {
-  content: "❧";
+  content: "❧︎";
   position: absolute;
   color: #55704c;
   font-size: 48px;
