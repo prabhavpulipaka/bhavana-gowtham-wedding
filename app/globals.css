@@ -322,7 +322,21 @@ body {
   }
 
   .hero-art {
+    width: min(360px, 88vw);
+    height: auto;
+    aspect-ratio: auto;
     margin-top: 25px;
+  }
+
+  .hero-painting {
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero-painting img {
+    height: auto;
+    object-fit: contain;
+    transform: none;
   }
 
   .hero h1 {
