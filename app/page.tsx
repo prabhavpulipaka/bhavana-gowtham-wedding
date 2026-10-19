@@ -305,7 +305,7 @@ export default function Home() {
         <div className="hero-art" aria-label="Wedding artwork" data-reveal="photo">
           <div className="hero-painting">
             <img
-              src="/artwork/wedding-couple2.webp"
+              src="/artwork/wedding-couple3.webp"
               alt="Traditional wedding-inspired illustration"
             />
             </div>
