@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### Bride-side and groom-side invitations
+
+Both invitation versions use the same codebase. Create two Vercel projects from this repository and set `NEXT_PUBLIC_INVITATION_SIDE` in each project's Environment Variables:
+
+- Bride-side project: `bride`
+- Groom-side project: `groom`
+
+Redeploy after changing the variable. If the variable is missing or has any other value, the bride-side invitation is used. Event details, calendar entries, copy, and enquiry contacts are configured in `app/invitation-data.ts`.

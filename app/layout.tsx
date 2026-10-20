@@ -12,14 +12,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const isGroomInvitation = process.env.NEXT_PUBLIC_INVITATION_SIDE === "groom";
+const invitationTitle = isGroomInvitation
+  ? "Bhavana & Gowtham | Groom's Family Celebrations"
+  : "Bhavana & Gowtham | Wedding Celebration";
+const invitationDescription = isGroomInvitation
+  ? "Join Bhavana and Gowtham's families for wedding celebrations in Hyderabad and Rajahmundry, 11 to 22 November 2026."
+  : "Join Bhavana and Gowtham in Hyderabad from 12 to 15 November 2026 for four days of celebration, music, and memories.";
+
 export const metadata: Metadata = {
-  title: "Bhavana & Gowtham | Wedding Celebration",
-  description:
-    "Join Bhavana and Gowtham in Hyderabad from 12 to 15 November 2026 for four days of celebration, music, and memories.",
+  title: invitationTitle,
+  description: invitationDescription,
   openGraph: {
-    title: "Bhavana & Gowtham | Wedding Celebration",
-    description:
-      "Celebrate with Bhavana and Gowtham in Hyderabad, 12–15 November 2026.",
+    title: invitationTitle,
+    description: invitationDescription,
     type: "website",
   },
 };

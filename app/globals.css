@@ -619,6 +619,26 @@ body {
   background: rgba(107, 41, 57, 0.1);
 }
 
+.invitation-groom .event-row {
+  display: flex;
+}
+
+.invitation-groom .event-information {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.invitation-groom .event-calendar-link {
+  align-self: center;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.invitation-groom .event-reception .event-art-image {
+  object-position: center top;
+}
+
 .event-flower {
   display: none;
 }
