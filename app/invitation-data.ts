@@ -171,7 +171,7 @@ const groomEvents: WeddingEvent[] = [
     date: "14 November 2026",
     time: "3:00 PM onwards",
     venue:
-      "Groom's residence: 726 Defence Colony, Sainikpuri · Bride's residence: The Ananda / Pochara Club House",
+      "Groom's residence: 726 Defence Colony, Sainikpuri",
     art: "mehandi",
     symbol: "❋\uFE0E",
     image: "/artwork/mehandi.webp",
@@ -179,7 +179,7 @@ const groomEvents: WeddingEvent[] = [
     calendarEnd: "20261114T123000Z",
     calendarLocation: "Mehandi location details to be confirmed",
     mapUrl:
-      "https://www.google.com/maps/search/?api=1&query=Pochara+Club+House+Sainikpuri",
+      "https://www.google.com/maps/place/TIARA+LABELS/@17.4895784,78.5340729,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb9be256e63333:0x23e7eb4607c6b03a!8m2!3d17.4895784!4d78.5366478!16s%2Fg%2F11vzc__bb2?entry=ttu&g_ep=EgoyMDI2MTAxNC4wIKXMDSoASAFQAw%3D%3D",
     details: "Indo-Western attire.",
   },
   {
