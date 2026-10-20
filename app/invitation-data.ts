@@ -264,7 +264,7 @@ export const invitations: Record<InvitationSide, InvitationConfig> = {
     },
     events: groomEvents,
     contacts: [
-      { name: "Bala Rao", phone: "" },
+      { name: "Bala Rao", phone: "+91 98667 95252" },
       { name: "Charvi", phone: "+91 89779 04088" },
     ],
   },
