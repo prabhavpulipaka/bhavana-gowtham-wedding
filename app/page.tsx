@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { activeInvitation, type InvitationConfig, type WeddingEvent } from "./invitation-data";
+import { Analytics } from "@vercel/analytics/next"
 
 function ArrowIcon({ direction }: { direction: "down" | "down-right" | "up-right" }) {
   const paths = {
