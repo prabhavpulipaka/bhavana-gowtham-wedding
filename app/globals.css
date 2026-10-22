@@ -619,6 +619,18 @@ body {
   background: rgba(107, 41, 57, 0.1);
 }
 
+.invitation-bride .event-information {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.invitation-bride .event-calendar-link {
+  align-self: center;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
 .invitation-groom .event-row {
   display: flex;
 }

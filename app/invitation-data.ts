@@ -69,6 +69,9 @@ const brideEvents: WeddingEvent[] = [
     calendarEnd: "20261112T113000Z",
     mapUrl:
       "https://www.google.com/maps/place/Golden+Serene+Farm+House/@17.7414375,78.6089375,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcc7f0a543f0443:0xb90f4a940e49cee5!8m2!3d17.7414375!4d78.6089375!16s%2Fg%2F11w1b_sgsr?authuser=0&hl=en&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+    calendarNote: "Lunch follows.",
+    details:
+      "Dark florals, Kalamkari, animal, or Bandhani prints; carnival-ready style for everyone. Lunch follows.",
   },
   {
     id: "sangeeth",
@@ -83,6 +86,9 @@ const brideEvents: WeddingEvent[] = [
     calendarEnd: "20261113T173000Z",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Advaya+Convention+Munirabad+ORR+Exit+6",
+    calendarNote: "Dinner follows.",
+    details:
+      "For him: vibrant prints and party-ready style. For her: fancy lehengas, gowns, or statement sarees. Dinner follows.",
   },
   {
     id: "mehandi",
@@ -97,6 +103,8 @@ const brideEvents: WeddingEvent[] = [
     calendarEnd: "20261114T123000Z",
     mapUrl:
       "https://www.google.com/maps/place/The+Ananda/@17.4313625,78.648669,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb9f54c270f3eb:0x31b49b00ab1703ff!8m2!3d17.4313625!4d78.6512439!16s%2Fg%2F11smgl8_5w?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+    details: "Indo-Western attire.",
+
   },
   {
     id: "pelli",
@@ -111,6 +119,7 @@ const brideEvents: WeddingEvent[] = [
     calendarEnd: "20261115T180000Z",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Jenvi+Conventions+Thumukunta+Hyderabad",
+    details: "Indian traditional attire.",
   },
 ];
 
